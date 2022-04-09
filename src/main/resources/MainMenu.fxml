@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="624.0" prefWidth="1020.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.menu.MenuController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DARKORANGE" height="120.0" layoutX="295.0" layoutY="36.0" stroke="MEDIUMBLUE" strokeType="INSIDE" strokeWidth="7.0" width="436.0" />
+      <Text fx:id="title" layoutX="378.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BUCK-MAN">
+         <font>
+            <Font name="Impact" size="63.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.8">
+               <color>
+                  <Color blue="0.9780701994895935" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="MEDIUMBLUE" height="111.0" layoutX="411.0" layoutY="191.0" stroke="BLACK" strokeType="INSIDE" width="213.0" />
+      <Button fx:id="start" layoutX="423.0" layoutY="201.0" mnemonicParsing="false" onAction="#handleStartAction" prefHeight="92.0" prefWidth="192.0" style="-fx-background-color: darkorange;" text="START">
+
+         <font>
+            <Font name="Impact" size="38.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DARKORANGE" height="65.0" layoutX="383.0" layoutY="505.0" stroke="MEDIUMBLUE" strokeType="INSIDE" strokeWidth="7.0" width="278.0" />
+      <Text fill="#262525" layoutX="404.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HS:">
+         <font>
+            <Font name="Impact" size="34.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="MEDIUMBLUE" height="111.0" layoutX="414.0" layoutY="336.0" stroke="BLACK" strokeType="INSIDE" width="213.0" />
+      <Button fx:id="quit" layoutX="426.0" layoutY="347.0" mnemonicParsing="false" onAction="#handleQuitAction" prefHeight="91.0" prefWidth="191.0" style="-fx-background-color: darkorange;" text="QUIT">
+         <font>
+            <Font name="Impact" size="38.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="score" fill="#262525" layoutX="478.0" layoutY="551.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0000,0000" wrappingWidth="147.50445263494873">
+         <font>
+            <Font name="Impact" size="32.0" />
+         </font>
+      </Text>
+      <ImageView accessibleRole="BUTTON" fitHeight="92.0" fitWidth="66.0" layoutX="33.0" layoutY="36.0" onMouseClicked="#muteAudio" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@unmute-button.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="201.0" fitWidth="268.0" layoutX="66.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bucky.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="-0.02" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="204.0" fitWidth="169.0" layoutX="716.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bucknell_B.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

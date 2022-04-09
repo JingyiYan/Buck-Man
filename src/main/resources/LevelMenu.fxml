@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="624.0" prefWidth="1020.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.menu.LevelController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="CORNFLOWERBLUE" height="102.0" layoutX="304.0" layoutY="41.0" stroke="ORANGE" strokeType="INSIDE" strokeWidth="7.0" width="413.0" />
+      <Text fx:id="levelTitle" fill="WHITE" layoutX="383.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LEVEL SELECT">
+         <font>
+            <Font name="Impact" size="50.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.21">
+               <color>
+                  <Color red="1.0" green="0.4833333194255829" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="CORNFLOWERBLUE" height="80.0" layoutX="365.0" layoutY="232.0" stroke="ORANGE" strokeType="INSIDE" strokeWidth="7.0" width="287.0" />
+      <Button fx:id="quad" layoutX="372.0" layoutY="240.0" mnemonicParsing="false" onAction="#handleSelectQuad" prefHeight="63.0" prefWidth="273.0" style="-fx-background-color: cornflowerblue;" text="MALESARDI QUAD" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="30.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="CORNFLOWERBLUE" height="71.0" layoutX="361.0" layoutY="468.0" stroke="ORANGE" strokeType="INSIDE" strokeWidth="7.0" width="132.0" />
+      <Button fx:id="exit" layoutX="368.0" layoutY="474.0" mnemonicParsing="false" onAction="#handleExitAction" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: cornflowerblue;" text="EXIT" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="30.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="CORNFLOWERBLUE" height="71.0" layoutX="524.0" layoutY="468.0" stroke="ORANGE" strokeType="INSIDE" strokeWidth="7.0" width="132.0" />
+      <Button fx:id="help" layoutX="530.0" layoutY="474.0" mnemonicParsing="false" onAction="#handleHelpAction" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: cornflowerblue;" text="HELP" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="30.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
