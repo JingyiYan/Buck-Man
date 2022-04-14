@@ -5,16 +5,13 @@
  * Learn more about Gradle by exploring our samples at https://docs.gradle.org/6.8.2/samples
  */
 
-// Gradle build file
-// CSCI 205 - Software Engineering and Design
-// Bucknell University
-// Original Author - B. King
 plugins{
     id 'application'
     id 'java'
     id 'idea'
     id 'org.openjfx.javafxplugin' version '0.0.8'
 }
+
 
 group 'org.rtm'
 version '0.1-SNAPSHOT'

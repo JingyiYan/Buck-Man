@@ -152,7 +152,7 @@ public class PacmanController{
             theModel.handleGameOver();
         }
         removeLife();
-        if (theModel.getNumLives() <= 0) {
+        if (theModel.getNumLives() < 0) {
             this.timer.cancel();
             try {
                 Stage theStage = (Stage)mazePane.getScene().getWindow();

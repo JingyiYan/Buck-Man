@@ -37,6 +37,7 @@ public class PacmanView {
     private final Image dotImage;
     private final Image powerDotImage;
     private final Image buckyImage;
+    private final Image buckyLogo;
     private final Image quadBG;
     private Image badalImage;
     private Image bravmanImage;
@@ -64,7 +65,8 @@ public class PacmanView {
         this.wallImage = new Image("wall.png");
         this.dotImage = new Image("smalldot.png");
         this.powerDotImage = new Image("whitedot.png");
-        this.buckyImage = new Image("bucky.png");
+        this.buckyImage = new Image("Bucky.png");
+        this.buckyLogo = new Image("bucky_Logo.png");
         this.quadBG = new Image("Malesardie.png");
         this.gridRow = this.theModel.getGridRow();
         this.gridCol = this.theModel.getGridCol();

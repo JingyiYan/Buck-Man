@@ -76,7 +76,7 @@
       </ImageView>
       <ImageView fitHeight="201.0" fitWidth="268.0" layoutX="66.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@bucky.png" />
+            <Image url="@bucky_Logo.png" />
          </image>
          <effect>
             <ColorAdjust brightness="1.0" contrast="-0.02" />

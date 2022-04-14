@@ -5,10 +5,8 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.media.Media;
-import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
-import java.io.File;
+
 import java.io.IOException;
 
 
@@ -34,6 +32,7 @@ public class MenuMain extends Application {
      */
     @Override
     public void start(Stage primaryStage) throws IOException {
+        System.out.println(getClass().getClassLoader().getResource("MainMenu.fxml").getPath());
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("MainMenu.fxml"));
         primaryStage.setTitle("BUCK-MAN");
         primaryStage.setScene(new Scene(root));

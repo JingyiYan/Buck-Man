@@ -379,7 +379,7 @@ public class PacmanModel {
     public void handleGameOver() {
         for (Ghost ghost: ghosts) {
             if (ghost.getxPos() == buckyLoc.getX() && ghost.getyPos() == buckyLoc.getY()) {
-                if (livesCount > 0) {
+                if (livesCount >= 0) {
                     livesCount--;
                     resetAllSprites();
                 }
